@@ -25,7 +25,7 @@ if (!is_null($events['events'])) {
 			
 			$messages = [
 			 'type' => 'text',
-			 'text' => "sssf sdfs กฟหดหฟ"
+			 'text' => "ddd"
 			];
 			$line_msg["to"] = "U1355bc358b90258582531ecb6172dc95"; 
 			$line_msg["messages"][0] = $messages;
