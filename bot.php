@@ -27,11 +27,11 @@ if (!is_null($events['events'])) {
 			 'type' => 'text',
 			 'text' => "sssf sdfs กฟหดหฟ"
 			];
-			$reply["to"] = "U1355bc358b90258582531ecb6172dc95"; 
-			$reply["messages"][0] = $messages;
-			putMessageLine($reply);
+			$line_msg["to"] = "U1355bc358b90258582531ecb6172dc95"; 
+			$line_msg["messages"][0] = $messages;
+			//putMessageLine($reply);
 			
-			function putMessageLine($line_msg){
+			//function putMessageLine($line_msg){
 			    $ch = curl_init( 'https://api.line.me/v2/bot/message/push' );
 			    # Setup request to send json via POST.
 			    $authorization = "Authorization: Bearer PmDddl8WuDAkEfXMn31RRp51mGKnckP1eQ/FicaegAdtDn8+6lqTl/+X3wp1yuYUSGGFw4AcFM64SqRmLBOERVxDJUh3EEGNZb2lzLvGIwyhaJOpyiDwZijKDdiotKRGK7Chf5QR+F3+v4wPgocg6wdB04t89/1O/w1cDnyilFU=";
@@ -45,7 +45,7 @@ if (!is_null($events['events'])) {
 			    $result = curl_exec($ch);
 			    curl_close($ch);
 			    //print_r($result);
-			}
+			//}
 
 		}
 	}
