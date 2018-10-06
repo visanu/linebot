@@ -12,7 +12,7 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			$text =  $event['message']['text'];
-			$qry_str = "?data=".($text)."&event=".$content;
+			$qry_str = "?data=".urlencode($text)."&event=".$content;
 			$ch = curl_init();
 
 			// Set query data here with the URL
