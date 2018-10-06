@@ -25,7 +25,7 @@ if (!is_null($events['events'])) {
 			
 			$messages = [
 			 'type' => 'text',
-			 'text' => $text."1"
+			 'text' => urlencode($text."1")
 			];
 			$line_msg["to"] = "U1355bc358b90258582531ecb6172dc95"; 
 			$line_msg["messages"][0] = $messages;
