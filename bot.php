@@ -25,7 +25,7 @@ if (!is_null($events['events'])) {
 			
 			$messages = [
 			 'type' => 'text',
-			 'text' => $text
+			 'text' => "sssf sdfs กฟหดหฟ"
 			];
 			$reply["to"] = "U1355bc358b90258582531ecb6172dc95"; 
 			$reply["messages"][0] = $messages;
