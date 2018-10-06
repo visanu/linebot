@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 			
 			
-			$qry_str = "data=".urlencode($text)."&event=".$content;
+			$qry_str = "data=".($text)."&event=".$content;
 			$ch = curl_init();
 		
 			curl_setopt($ch, CURLOPT_URL,"http://notify.moomnee.com/line_bot/echo_message.php");
