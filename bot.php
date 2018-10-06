@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 			$ch = curl_init();
 
 			// Set query data here with the URL
-			curl_setopt($ch, CURLOPT_URL, urlencode('http://notify.moomnee.com/line_bot/echo_message.php' . $qry_str)); 
+			curl_setopt($ch, CURLOPT_URL, ('http://notify.moomnee.com/line_bot/echo_message.php' . $qry_str)); 
 
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch, CURLOPT_TIMEOUT, 3);
