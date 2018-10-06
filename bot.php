@@ -22,6 +22,14 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_TIMEOUT, 3);
 			$content = trim(curl_exec($ch));
 			curl_close($ch);
+			
+			$messages = [
+			 'type' => 'text',
+			 'text' => $text
+			];
+			$reply["to"] = "U1355bc358b90258582531ecb6172dc95; 
+			$reply["messages"][0] = $messages;
+			putMessageLine($reply);
 
 		}
 	}
